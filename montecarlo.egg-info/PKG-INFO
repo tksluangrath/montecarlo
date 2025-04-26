@@ -1,3 +1,14 @@
+Metadata-Version: 2.1
+Name: montecarlo
+Version: 0.2
+Summary: A Python module for Monte Carlo simulations using Die, Game, and Analyzer classes.
+Home-page: https://github.com/tksluangrath/m09-homework-2025
+Author: Terrance Luangrath
+Author-email: vwy4sa@virginia.com
+License: MIT
+License-File: LICENSE
+License-File: LICENSE-Copy1
+
 
 # Monte Carlo Simulator
 author: Terrance Luangrath

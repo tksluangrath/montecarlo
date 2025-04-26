@@ -1,0 +1,1 @@
+print("Welcome to Terrance Luangrath (vwysa) DS5100: Monte Carlo Simulation project")

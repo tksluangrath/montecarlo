@@ -14,10 +14,10 @@ class Game():
             TypeError: If any element in dice is not a Die object.
             ValueError: If dice don't have identical faces.
         """
-        # Check for valid input
         if not isinstance(dice, list) or len(dice) < 1:
             raise ValueError('Must be a list of dice')
         
+        # Check if all elements are Die class
         for die in dice:
             if not isinstance(die, Die):
                 raise TypeError('All elements must be a Die object')
@@ -28,8 +28,6 @@ class Game():
             if set(die.get_data().index) != first:
                 raise ValueError('All dice must have identical faces')
         
-        
-        # Check for all Die objects
         self.dice = dice
         self.results = None
         
@@ -49,11 +47,11 @@ class Game():
         if rolls < 1:
             raise ValueError('Number of rolls must be a positive integer.')
         
+        # Play the game and save as results DataFrame
         results = {}
         for i, die in enumerate(self.dice):
             results[i] = die.roll(rolls)
-            
-        
+
         self.results = pd.DataFrame(results)
         
     def show_results(self, form='wide'):
@@ -79,4 +77,3 @@ class Game():
             return narrow_df.set_index(['Rolls', 'Die'])
         else:
             raise ValueError('Format must be either \'wide\' or \'narrow\'')
-        
