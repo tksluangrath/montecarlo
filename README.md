@@ -17,7 +17,7 @@ A Python module for Monte Carlo Simulator simulations using three classes:
 Using pip install, the package will download.
 
 ```python 
-pip install montecarlo
+pip install git+https://github.com/tksluangrath/montecarlo.git
 ```
 
 ### Import
