@@ -43,8 +43,8 @@ analyzer = Analyzer(game)
 
 jackpot_count = analyzer.jackpot() # Count rolls where all dice show the same faces
 face_distribution = analyzer.face_counts_per_roll() # Frequency of each face per rolls
-combo_distribution = analyzer.combo_count()
-permutation_distribution = analyzer.permutation_count()
+combo_distribution = analyzer.combo_count() #  # Count distinct combinations of faces rolled (order doesn't matter)
+permutation_distribution = analyzer.permutation_count()  # Count distinct permutations of faces rolled (order matters)
 ```
 
 
